@@ -46,6 +46,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scanner.cs" />
+    <Compile Include="StdRandom.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="InTest.txt">

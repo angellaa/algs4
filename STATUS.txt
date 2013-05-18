@@ -7,15 +7,16 @@ DECISIONS:
 IMPLEMENTED:
 
 	BinarySearch
+	RandomSeq
 
 	StdIn	
 	In
-
+	StdRandom
+	
 	Scanner  (a partial version of the Java Scanner class)
 
 ALGS4 TODO:
 
-	RandomSeq
 	Average
 	Cat	
 	Shuffle
