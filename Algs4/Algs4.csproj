@@ -45,13 +45,28 @@
     <Compile Include="BinarySearch.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickFindUF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuickUnionPathCompressionUF.cs" />
+    <Compile Include="QuickUnionUF.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="RandomSeq.cs" />
+    <Compile Include="WeightedQuickUnionUF.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StdLib\StdLib.csproj">
       <Project>{435b5671-c1a7-4955-a43d-211fdc580731}</Project>
       <Name>StdLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.txt" />
+    <Content Include="STATUS.txt" />
+    <Compile Include="UF.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 namespace Algs4
 {
@@ -35,7 +36,22 @@ namespace Algs4
             Array.Copy(args, 1, algorithmArgs, 0, args.Length - 1);
 
             // Invoke the Main method of the requested algorithm
-            classType.GetMethod("Main").Invoke(null, new object[] { algorithmArgs });
+            MethodInfo mainMethod = classType.GetMethod("Main");
+
+            if (mainMethod == null)
+            {
+                Console.WriteLine("No Main method has been found in the class.");
+                return;
+            }
+
+            try
+            {
+                mainMethod.Invoke(null, new object[] {algorithmArgs});
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("The main method thrown an exception:\n" + ex);                
+            }
         }
     }
 }
