@@ -71,3 +71,24 @@ We would certainly be happy to plug any such efforts on coursera and encourage o
 
 Best,
 Kevin
+
+-------------------------------------------------------
+-              HOW TO RUN AN ALGORITHM                -
+-------------------------------------------------------
+
+First, build the project.
+
+You can use the following syntax to run a particular algorithm:
+
+   algs4 className [args...] < [input.txt]
+
+className is the name of the class that implement an algorithm.
+[args...] is the list of arguments to pass to the Main function of the algorithm
+[input.txt] is the path to a file that contains input data from the standard input
+
+You can find example of usage at the top of each algorithm class.
+The example of usage assume that all the input files are available alongside the algs4 executable.
+
+You can download all the input files at the following address:
+http://algs4.cs.princeton.edu/code/algs4-data.zip
+

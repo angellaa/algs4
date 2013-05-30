@@ -64,9 +64,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="README.txt" />
-    <Content Include="STATUS.txt" />
     <Compile Include="UF.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\README.txt">
+      <Link>README.txt</Link>
+    </Content>
+    <Content Include="..\STATUS.txt">
+      <Link>STATUS.txt</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

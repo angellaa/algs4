@@ -8,6 +8,11 @@ IMPLEMENTED:
 
 	BinarySearch
 	RandomSeq
+	QuickFindUF	
+	QuickUnionUF	
+	WeightedQuickUnionUF	
+	UF	
+	QuickUnionPathCompressionUF
 
 	StdIn	
 	In
@@ -39,11 +44,6 @@ ALGS4 TODO:
 	ThreeSumFast	
 	DoublingTest	
 	DoublingRatio	
-	QuickFindUF	
-	QuickUnionUF	
-	WeightedQuickUnionUF	
-	UF	
-	QuickUnionPathCompressionUF
 	
 	Insertion	
 	Selection	
