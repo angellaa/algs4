@@ -1,176 +1,166 @@
-﻿
-Status of the porting.
+﻿------------------------------------------------------------------
+                     ALGORITHMS PORTING STATUS
+------------------------------------------------------------------
 
-DECISIONS:
-	StdOut is not implemented. Use Console instead.
+PROGRESS: 12/140 (8%)
 
-IMPLEMENTED:
-
-	BinarySearch
-	RandomSeq
-	QuickFindUF	
-	QuickUnionUF	
-	WeightedQuickUnionUF	
-	UF	
-	QuickUnionPathCompressionUF
-
-	StdIn	
-	In
-	StdRandom
+ - BinarySearch.............................YES                        
+ - RandomSeq................................YES
+ - Average..................................TODO
+ - Cat......................................TODO
+ - Shuffle..................................TODO
+ - Counter..................................TODO
+ - StaticSETofInts..........................TODO
+ - Whitelist................................TODO
+ - Vector...................................TODO
+ - Date.....................................TODO	
+ - Transaction..............................TODO	
+ - Point2D..................................TODO	
+ - Interval1D...............................TODO	
+ - Interval2D...............................TODO	
+ - ResizingArrayStack.......................TODO	
+ - Stack....................................TODO	
+ - ResizingArrayQueue.......................TODO	
+ - Queue....................................TODO	
+ - Bag......................................TODO	
+ - Stopwatch................................TODO	
+ - ThreeSum.................................TODO	
+ - ThreeSumFast.............................TODO	
+ - DoublingTest.............................TODO	
+ - DoublingRatio............................TODO	
+ - QuickFindUF..............................YES	
+ - QuickUnionUF.............................YES	
+ - WeightedQuickUnionUF.....................YES	
+ - UF.......................................YES
+ - QuickUnionPathCompressionU...............YES
 	
-	Scanner  (a partial version of the Java Scanner class)
+ - Insertion................................TODO	
+ - Selection................................TODO	
+ - Shell....................................TODO
+ - Merge....................................TODO
+ - MergeBU..................................TODO
+ - Quick....................................TODO
+ - Quick3way................................TODO	
+ - TopM.....................................TODO
+ - MaxPQ....................................TODO
+ - MinPQ....................................TODO
+ - IndexMinPQ...............................YES
+ - IndexMaxPQ...............................TODO	
+ - Multiway.................................TODO
+ - Heap.....................................TODO
 
-ALGS4 TODO:
+ - FrequencyCounter.........................TODO  
+ - SequentialSearchST.......................TODO
+ - BinarySearchST...........................TODO
+ - BST......................................TODO
+ - RedBlackBST..............................TODO
+ - SeparateChainingHashST...................TODO
+ - LinearProbingHashST......................TODO
+ - ST.......................................TODO	
+ - SET......................................TODO
+ - DeDup....................................TODO
+ - WhiteFilter..............................TODO
+ - BlackFilter..............................TODO
+ - LookupCSV................................TODO	
+ - LookupIndex..............................TODO
+ - FileIndex................................TODO
+ - SparseVector.............................TODO
 
-	Average
-	Cat	
-	Shuffle
-	Counter
-	StaticSETofInts
-	Whitelist	
-	Vector	
-	Date	
-	Transaction	
-	Point2D	
-	Interval1D	
-	Interval2D	
-	ResizingArrayStack	
-	Stack	
-	ResizingArrayQueue	
-	Queue	
-	Bag	
-	Stopwatch	
-	ThreeSum	
-	ThreeSumFast	
-	DoublingTest	
-	DoublingRatio	
-	
-	Insertion	
-	Selection	
-	Shell
-	Merge
-	MergeBU	
-	Quick
-	Quick3way	
-	TopM
-	MaxPQ
-	MinPQ
-	IndexMinPQ	
-	IndexMaxPQ	
-	Multiway	 
-	Heap
-	
-	FrequencyCounter	  
-	SequentialSearchST	
-	BinarySearchST	
-	BST	
-	RedBlackBST	
-	SeparateChainingHashST
-	LinearProbingHashST
-	ST	
-	SET	
-	DeDup	
-	WhiteFilter
-	BlackFilter
-	LookupCSV	
-	LookupIndex
-	FileIndex	
-	SparseVector	
-	
-	Graph	
-	DepthFirstSearch	
-	DepthFirstPaths	
-	BreadthFirstPaths	
-	CC	
-	Bipartite	
-	Cycle	
-	SymbolGraph
-	DegreesOfSeparation	
-	Digraph	
-	DigraphGenerator	
-	DirectedDFS	
-	DepthFirstDirectedPaths
-	DirectedCycle	
-	DepthFirstOrder	
-	Topological	
-	BreadthFirstDirectedPaths
-	TransitiveClosure	
-	SymbolDigraph	
-	KosarajuSharirSCC	
-	EdgeWeightedGraph	
-	Edge	
-	LazyPrimMST	
-	PrimMST		
-	KruskalMST	
-	BoruvkaMST	
-	EdgeWeightedDigraph	
-	DirectedEdge	
-	DijkstraSP	
-	DijkstraAllPairsSP	
-	AcyclicSP	
-	AcyclicLP	
-	CPM	
-	BellmanFordSP	
-	EdgeWeightedDirectedCycle
-	Arbitrage	
-	FloydWarshall	
-	AdjMatrixEdgeWeightedDigraph
-	
-	Alphabet
-	Count	
-	LSD	  
-	MSD	
-	Quick3string	  
-	TrieST	
-	TST	  
-	KMP	
-	BoyerMoore	
-	RabinKarp	
-	NFA	
-	GREP	
-	BinaryDump	
-	HexDump	
-	PictureDump	
-	Genome	
-	RunLength	
-	Huffman	
-	LZW	
-	
-	CollisionSystem	
-	Particle	
-	BTree	B-tree
-	SuffixArray	
-	LRS	
-	KWIK	
-	FordFulkerson	
-	FlowNetwork	
-	FlowEdge	
-	BipartiteMatching	
-	AssignmentProblem	
-	Simplex	
-	
-	GaussianElimination	
-	FFT	
-	Complex
-	GrahamScan	
-	FarthestPair	
-	ClosestPair	
+ - Graph....................................TODO	
+ - DepthFirstSearch.........................TODO
+ - DepthFirstPaths..........................TODO	
+ - BreadthFirstPaths........................TODO	
+ - CC.......................................TODO
+ - Bipartite................................TODO	
+ - Cycle....................................TODO	
+ - SymbolGraph..............................TODO
+ - DegreesOfSeparation......................TODO	
+ - Digraph..................................TODO	
+ - DigraphGenerator.........................TODO
+ - DirectedDFS..............................TODO	
+ - DepthFirstDirectedPaths..................TODO
+ - DirectedCycle............................TODO	
+ - DepthFirstOrder..........................TODO	
+ - Topological..............................TODO	
+ - BreadthFirstDirectedPaths................TODO
+ - TransitiveClosure........................TODO	
+ - SymbolDigraph............................TODO	
+ - KosarajuSharirSCC........................TODO	
+ - EdgeWeightedGraph........................TODO	
+ - Edge.....................................TODO	
+ - LazyPrimMST..............................TODO	
+ - PrimMST..................................TODO		
+ - KruskalMST...............................TODO
+ - BoruvkaMST...............................TODO
+ - EdgeWeightedDigraph......................TODO
+ - DirectedEdge.............................TODO
+ - DijkstraSP...............................TODO
+ - DijkstraAllPairsSP.......................TODO
+ - AcyclicSP................................TODO
+ - AcyclicLP................................TODO
+ - CPM......................................TODO
+ - BellmanFordSP............................TODO
+ - EdgeWeightedDirectedCycle................TODO
+ - Arbitrage................................TODO
+ - FloydWarshall............................TODO
+ - AdjMatrixEdgeWeightedDigraph.............TODO
 
-STDLIB TODO (only required algorithms):
+ - Alphabet.................................TODO
+ - Count....................................TODO
+ - LSD......................................TODO	  
+ - MSD......................................TODO
+ - Quick3string.............................TODO	  
+ - TrieST...................................TODO
+ - TST......................................TODO
+ - KMP......................................TODO
+ - BoyerMoore...............................TODO	
+ - RabinKarp................................TODO	
+ - NFA......................................TODO	
+ - GREP.....................................TODO	
+ - BinaryDump...............................TODO
+ - HexDump..................................TODO	
+ - PictureDump..............................TODO	
+ - Genome...................................TODO	
+ - RunLength................................TODO	
+ - Huffman..................................TODO	
+ - LZW......................................TODO	
 
-	StdDraw	
-	StdAudio	
-	StdStats	
-	StdArrayIO	
-	Out	
-	Draw	
-	Picture	
-	Stopwatch	
-	BinaryStdIn
-	BinaryStdOut
-	BinaryIn	
-	BinaryOut	
+ - CollisionSystem..........................TODO
+ - Particle.................................TODO
+ - BTree....................................TODO
+ - SuffixArray..............................TODO
+ - LRS......................................TODO
+ - KWIK.....................................TODO
+ - FordFulkerson............................TODO	
+ - FlowNetwork..............................TODO
+ - FlowEdge.................................TODO
+ - BipartiteMatching........................TODO
+ - AssignmentProblem........................TODO
+ - Simplex..................................TODO
 
+ - GaussianElimination......................TODO	
+ - FFT......................................TODO
+ - Complex..................................TODO
+ - GrahamScan...............................TODO
+ - FarthestPair.............................TODO
+ - ClosestPair..............................TODO
 
+STDLIB IMPLEMENTATION (only required classes will be ported):
 
-
+ - StdIn....................................YES
+ - StdOut...................................NO   (Replaced with Console)	
+ - In.......................................YES
+ - StdRandom................................YES
+ - StdDraw..................................TODO IF REQUIRED
+ - StdAudio.................................TODO IF REQUIRED
+ - StdStats.................................TODO IF REQUIRED
+ - StdArrayIO...............................TODO IF REQUIRED	
+ - Out......................................TODO IF REQUIRED
+ - Draw.....................................TODO IF REQUIRED
+ - Picture..................................TODO IF REQUIRED	
+ - Stopwatch................................TODO IF REQUIRED	
+ - BinaryStdIn..............................TODO IF REQUIRED
+ - BinaryStdOut.............................TODO IF REQUIRED
+ - BinaryIn.................................TODO IF REQUIRED	
+ - BinaryOut................................TODO IF REQUIRED	 
+ - Scanner..................................YES (a partial version of the Java Scanner class)
