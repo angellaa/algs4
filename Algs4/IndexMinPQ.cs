@@ -328,13 +328,16 @@ namespace Algs4
                 throw new NotImplementedException();
             }
 
-            public void Dispose() {}
+            public void Dispose() { }
         }
+    }
 
+    public class IndexMinPQExample
+    {
         public static void Main(string[] args)
         {
             // insert a bunch of strings
-            string[] strings = {"it", "was", "the", "best", "of", "times", "it", "was", "the", "worst"};
+            string[] strings = { "it", "was", "the", "best", "of", "times", "it", "was", "the", "worst" };
 
             var pq = new IndexMinPQ<string>(strings.Length);
             for (int i = 0; i < strings.Length; i++)

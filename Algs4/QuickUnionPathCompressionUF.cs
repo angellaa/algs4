@@ -89,7 +89,10 @@ namespace Algs4
             
             Count--;
         }
+    }
 
+    public class QuickUnionPathCompressionUFExample
+    {
         public static void Main(string[] args)
         {
             int N = StdIn.ReadInt();
@@ -103,13 +106,13 @@ namespace Algs4
             {
                 int p = StdIn.ReadInt();
                 int q = StdIn.ReadInt();
-                
+
                 if (uf.Connected(p, q)) continue;
                 uf.Union(p, q);
-                
+
                 Console.WriteLine(p + " " + q);
             }
-            
+
             Console.WriteLine(uf.Count + " components");
         }
     }
