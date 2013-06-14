@@ -36,7 +36,7 @@ namespace Algs4
         {
             id = new int[N];
             Count = N;
-            
+
             for (int i = 0; i < N; i++)
             {
                 id[i] = i;
@@ -76,13 +76,16 @@ namespace Algs4
         {
             int i = Find(p);
             int j = Find(q);
-            
+
             if (i == j) return;
             id[i] = j;
-            
+
             Count--;
         }
+    }
 
+    public class QuickUnionUFExample
+    {
         public static void Main(string[] args)
         {
             int N = StdIn.ReadInt();
@@ -96,10 +99,10 @@ namespace Algs4
             {
                 int p = StdIn.ReadInt();
                 int q = StdIn.ReadInt();
-                
+
                 if (uf.Connected(p, q)) continue;
                 uf.Union(p, q);
-                
+
                 Console.WriteLine(p + " " + q);
             }
 
