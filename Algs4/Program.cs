@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -47,33 +48,21 @@ namespace Algs4
 
             try
             {
-                mainMethod.Invoke(null, new object[] {algorithmArgs});
+                mainMethod.Invoke(null, new object[] { algorithmArgs });
             }
             catch (Exception ex)
             {
-                Console.WriteLine("The main method thrown an exception:\n" + ex);                
+                Console.WriteLine("The main method thrown an exception:\n" + ex);
             }
         }
 
         private static Type GetClassType(string algorithmName)
         {
-            if (AlgorithmToType.ContainsKey(algorithmName))
-            {
-                return AlgorithmToType[algorithmName];
-            }
+            var algorithmExample = Type.GetType("Algs4." + algorithmName + "Example");
+            if (algorithmExample != null)
+                return algorithmExample;
 
             return Type.GetType("Algs4." + algorithmName);
         }
-
-        /// <summary>
-        /// A dictionary that associate an algorithm class name to the associate type.
-        /// The type will be used to call the static Main method so it should be possible to use open types.
-        /// However, a closed generic type is required to avoid the following runtime exception in Reflection:
-        /// "Late bound operations cannot be performed on types or methods with generic parameters".
-        /// </summary>
-        private static readonly Dictionary<string, Type> AlgorithmToType = new Dictionary<string, Type>
-        {
-            { "IndexMinPQ", typeof (IndexMinPQ<int>) }
-        };
     }
 }

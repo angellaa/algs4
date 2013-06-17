@@ -77,7 +77,10 @@ namespace Algs4
 
             Count--;
         }
+    }
 
+    public class QuickFindUFExample
+    {
         public static void Main(string[] args)
         {
             int N = StdIn.ReadInt();
