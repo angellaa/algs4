@@ -1,9 +1,6 @@
 ﻿using StdLib;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 
 namespace Algs4
 {
@@ -32,6 +29,10 @@ namespace Algs4
         /// Rearranges an array of objects in uniformly random order
         /// (under the assumption that <tt>Random(new Guid().GetHashCode())</tt> generates independent
         /// and uniformly distributed numbers.
+        /// 
+        /// the random interval could be taken either from 0(inclusively) to i(inclusively)
+        /// OR
+        /// from i(inclusively) to  N-1 (inclusively)
         /// </summary>
         /// <see cref="StdRandom"/>
         /// <param name="a">a the array to be shuffled</param>
@@ -43,7 +44,8 @@ namespace Algs4
             int N = a.Length;
             for (int i = 0; i < N; i++)
             {
-                int r = random.Next(i);
+                //take the item between 0 and i (inclusively)
+                int r = random.Next(i + 1);
                 T swap = a[r];
                 a[r] = a[i];
                 a[i] = swap;
@@ -54,6 +56,10 @@ namespace Algs4
         /// Rearranges an array of objects in uniformly random order
         /// (under the assumption that <tt>Random(new Guid().GetHashCode())</tt> generates independent
         /// and uniformly distributed numbers.
+        /// 
+        /// the random interval could be taken either from 0(inclusively) to i(inclusively)
+        /// OR
+        /// from i(inclusively) to  N-1 (inclusively)
         /// </summary>
         /// <see cref="StdRandom"/>
         /// <param name="a">a the array to be shuffled</param>
@@ -65,7 +71,8 @@ namespace Algs4
             int N = a.Length;
             for (int i = 0; i < N; i++)
             {
-                int r = random.Next(i);
+                //take the item between 0 and i (inclusively)
+                int r = random.Next(i + 1);
                 T swap = a[r];
                 a[r] = a[i];
                 a[i] = swap;
