@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using StdLib;
@@ -16,14 +16,20 @@ namespace Algs4
     ///  % more tiny.txt
     ///  S O R T E X A M P L E
     ///  
-    ///  % java Selection < tiny.txt
-    ///  A E E L M O P R S T X                 [ one string per line ]
+    ///  algs Merge < tiny.txt
+    ///  A E E L M O P R S T X                  [ one string per line ]
     ///    
     ///  % more words3.txt
     ///  bed bug dad yes zoo ... all bad yet
     ///  
-    ///  % java Merge < words3.txt
+    ///  algs Merge < words3.txt
     ///  all bad bed bug dad ... yes yet zoo    [ one string per line ]
+    ///   
+    ///  example: user wants to type string from command line    
+    ///  algs Merge                             [ enter]
+    ///  9 8 7 6 1 2 3 4 5                      [ type into command line + enter ]  
+    ///                                         [ CTRL+Z + enter ]
+    ///  note:  windows => end of file is CTRL+Z       
     ///  **************************************************************************
 
 

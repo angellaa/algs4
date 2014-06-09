@@ -11,7 +11,7 @@ namespace Algs4Tests
     {
         [Test]
         //[MethodName_StateUnderTest_ExpectedBehavior]
-        public void Sort_Elemntary_IsSorted()
+        public void Sort_Elementary_IsSorted()
         {
             IComparable[] unsortedArray = "54321".Select(c => c.ToString()).ToArray();
             IComparable[] expectedArray = "12345".Select(c => c.ToString()).ToArray();
@@ -47,7 +47,7 @@ namespace Algs4Tests
 
         [Test]
         //[MethodName_StateUnderTest_ExpectedBehavior]
-        public void IndexSort_Elemntary_IsSorted()
+        public void IndexSort_Elementary_IsSorted()
         {
             IComparable[] unsortedArray = "edcba".Select(c => c.ToString()).ToArray();
             IEnumerable<int> expectedArray = new List<int>() { 4, 3, 2, 1, 0 };

@@ -11,7 +11,7 @@ namespace Algs4Tests
     {
         [Test]
         //[MethodName_StateUnderTest_ExpectedBehavior]
-        public void Sort_Elemntary_IsSorted()
+        public void Sort_Elementary_IsSorted()
         {
             IComparable[] unsortedArray = "4321".Select(c => c.ToString()).ToArray();
             IComparable[] expectedArray = "1234".Select(c => c.ToString()).ToArray();
